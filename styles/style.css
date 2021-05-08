@@ -1,0 +1,23 @@
+.colors{
+    display: flex;
+    flex-direction: row;
+}
+.colorOne , .colorTwo , .colorThree , .colorFour , .colorFive{
+    width: 307px;
+    height: 400px;
+    text-align: center;
+}
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+    font-size: 16px;
+    background: #ec13ab;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+  
+}
