@@ -1,24 +1,23 @@
-// const color1 = document.getElementById("colorOne");
-// const color2 = document.getElementById("colorTwo");
-// const color3 = document.getElementById("colorThree");
-// const color4 = document.getElementById("colorFour");
-// const color5 = document.getElementById("colorFive"); 
-const gencolor = document.getElementById("generate");
 
-// const color1para = document.getElementById("coloronep"); 
+var code = document.querySelectorAll('.code');
 
-var divs = document.querySelectorAll('div');
+var color = document.querySelectorAll('.color');
 
+var button = document.querySelector('.generate');
 
+button.addEventListener("click",colorGen);
+
+function colorGen() {
 
 
-
-gencolor.addEventListener("click",function () {
-    divs.forEach(function(item) {
+    for (let i=0;i<code.length;i++){
         const randomColor = Math.floor(Math.random()*16777215).toString(16);
-        item.style.backgroundColor = "#"+ randomColor;
-        let hexaColor=document.createElement("p");
-        hexaColor.innerText = "# "+ randomColor;
+        code[i].innerHTML = "#"+Math.floor(Math.random()*16777215).toString(16);;
 
-    });
-})
+        color[i].style.backgroundColor = "#"+randomColor;
+
+    }
+
+}
+
+colorGen();
