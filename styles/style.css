@@ -33,6 +33,7 @@ button {
 }
 button:hover{
     background-color: #114d64;
+    cursor: pointer;
 }
 .code {
   background-color: white;
@@ -81,8 +82,30 @@ button:hover{
   font-size: 28px;
   font-weight: bold;
 }
-.close:hover,
-.close:focus {
+.close:hover {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+#pname{
+  text-align: center;
+  right: auto;
+  left: auto;
+}
+
+#colorpalletes{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+
+}
+#colorpalletes p{
+  width: 300px;
+  border-radius: 20px;
+  color: white;
+  text-shadow: black 1px 1px 2px;
+}
+
+h1{
+  color: #13aeec;
+}
